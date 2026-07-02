@@ -222,8 +222,10 @@
             document.getElementById('education').textContent = profileData.education;
             document.getElementById('email').textContent = profileData.email;
             document.getElementById('email').href = `mailto:${profileData.email}`;
-            document.getElementById('linkedin').href = profileData.linkedin;
-            document.getElementById('linkedin-text').textContent = profileData.linkedin;
+            document.getElementById('line').href = `https://line.me/ti/p/~${profileData.line}`;
+            document.getElementById('line-text').textContent = profileData.line;
+            //document.getElementById('linkedin').href = profileData.linkedin;
+            //document.getElementById('linkedin-text').textContent = profileData.linkedin;
             const aboutText = [profileData.about1, profileData.about2, profileData.about3, profileData.about4]
                 .filter(text => text && text.trim()) // Remove empty parts
                 .join(' ');
@@ -313,7 +315,7 @@
             expertise: "電子商務、IT Infra建置規劃、資安",
             education: "臺科大EMBA企業管理系",
             email: "M11408915@mail.ntust.edu.tw",
-            linkedin: "https://pse.is",
+            line: "imitate",
             about1: "產業與科技的演進，<br>",
             about2: "AI的加乘讓變化的速度更加快速，<br>",
             about3: "這堂課讓我們跟著欒帥教授搭上火箭。<br>",
